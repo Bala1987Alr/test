@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="Bee">Bee</string>
+    <string name="C">C</string>
+    <string name="Apple">Apple</string>
+    <string name="B">B</string>
+    <string name="Cat">Cat</string>
+    <string name="A">A</string>
+
+    <string name="title_activity_main_screen">MainScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

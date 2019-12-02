@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+     >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <LinearLayout   
+                    android:id="@+id/dragLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="left"
+                    android:background="@drawable/curve_shape"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/dragImg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:autoText="false"
+                        android:background="@drawable/v_s"
+                        android:src="@drawable/dog"
+                        android:tag="a" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dropLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/curve_shape"
+                    android:onClick="onTouch"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/dropImg1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_column="15"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/a"
+                        android:onClick="speakTheOptionImageValue"
+                        android:src="@drawable/jug"
+                        android:tag="a"
+                        android:textSize="20.0sp"
+                        android:typeface="serif" />
+                </LinearLayout>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <LinearLayout
+                    android:id="@+id/dragLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="left"
+                    android:background="@drawable/curve_shape"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/dragImg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/jug"
+                        android:src="@drawable/dog"
+                        android:tag="a" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dropLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/curve_shape"
+                    android:onClick="onTouch"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/dropImg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="15"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/a"
+                        android:onClick="speakTheOptionImageValue"
+                        android:src="@drawable/jug"
+                        android:tag="a" />
+                </LinearLayout>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <LinearLayout
+                    android:id="@+id/dragLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="left"
+                    android:background="@drawable/curve_shape"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/dragImg3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/jug"
+                        android:src="@drawable/dog"
+                        android:tag="a" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dropLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/curve_shape"
+                    android:onClick="onTouch"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/dropImg3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="15"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/c_s"
+                        android:onClick="speakTheOptionImageValue"
+                        android:src="@drawable/jug"
+                        android:tag="a" />
+                </LinearLayout>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <LinearLayout
+                    android:id="@+id/dragLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="left"
+                    android:background="@drawable/curve_shape"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/dragImg4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/jug"
+                        android:src="@drawable/dog"
+                        android:tag="a" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dropLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/curve_shape"
+                    android:onClick="onTouch"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/dropImg4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="15"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/a"
+                        android:onClick="speakTheOptionImageValue"
+                        android:src="@drawable/jug"
+                        android:tag="a" />
+                </LinearLayout>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <LinearLayout
+                    android:id="@+id/dragLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="left"
+                    android:background="@drawable/curve_shape"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/dragImg5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/jug"
+                        android:src="@drawable/dog"
+                        android:tag="a" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dropLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/curve_shape"
+                    android:onClick="onTouch"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/dropImg5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="15"
+                        android:layout_gravity="center|right"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/a"
+                        android:onClick="speakTheOptionImageValue"
+                        android:src="@drawable/jug"
+                        android:tag="a" />
+                </LinearLayout>
+            </RelativeLayout>
+        </TableRow>
+
+
+    </TableLayout>
+</RelativeLayout>

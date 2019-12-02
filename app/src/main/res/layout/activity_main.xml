@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp" >
+
+            <ImageButton
+                android:id="@+id/ibACol1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/a"
+                android:contentDescription="@string/A" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/ibCCol3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/c"
+                android:contentDescription="@string/Cat" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp" >
+
+            <ImageButton
+                android:id="@+id/ibBCol1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"         android:scaleType="centerInside"
+                android:src="@drawable/b"
+                android:contentDescription="@string/B" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/ibACol3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"         android:scaleType="centerInside"
+                android:src="@drawable/a"
+                android:contentDescription="@string/Apple" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp" >
+
+            <ImageButton
+                android:id="@+id/ibCCol1"
+                android:layout_width="100dp"         android:scaleType="centerInside"
+                android:layout_height="100dp"
+                android:src="@drawable/c"
+                android:contentDescription="@string/C" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/ibBCol3"
+                android:layout_width="100dp"         android:scaleType="centerInside"
+                android:layout_height="100dp"
+                android:src="@drawable/b"
+                android:contentDescription="@string/Bee" />
+
+        </TableRow>
+
+
+    </TableLayout>
+    <ImageView android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/a"
+        android:id="@+id/image"
+        /> </RelativeLayout>
+<!--
+</androidx.constraintlayout.widget.ConstraintLayout>-->

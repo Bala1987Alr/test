@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"   
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@id/dragLayout1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/blackbordersquare1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@id/dragImg1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center" 
+                                android:layout_weight="1.0"
+                                android:gravity="center"
+                                android:text="Man"
+                                android:textColor="#ff000000"
+                                android:textSize="20.0sp"
+                                android:typeface="serif" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:id="@id/dropLayout1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/blackbordersquare1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@id/dropImg1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.0"
+                             android:gravity="center"
+                                android:text="Woman"
+                                android:textColor="#ff000000"
+                                android:textSize="20.0sp"
+                                android:typeface="serif" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@id/dragLayout2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/blackbordersquare1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@id/dragImg2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.0"
+                             android:gravity="center"
+                                android:text="Man"
+                                android:textColor="#ff000000"
+                                android:textSize="20.0sp"
+                                android:typeface="serif" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:id="@id/dropLayout2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/blackbordersquare1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@id/dropImg2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.0"
+                             android:gravity="center"
+                                android:text="Woman"
+                                android:textColor="#ff000000"
+                                android:textSize="20.0sp"
+                                android:typeface="serif" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@id/dragLayout3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/blackbordersquare1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@id/dragImg3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.0"
+                             android:gravity="center"
+                                android:text="Man"
+                                android:textColor="#ff000000"
+                                android:textSize="20.0sp"
+                                android:typeface="serif" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:id="@id/dropLayout3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/blackbordersquare1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@id/dropImg3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.0"
+                             android:gravity="center"
+                                android:text="Woman"
+                                android:textColor="#ff000000"
+                                android:textSize="20.0sp"
+                                android:typeface="serif" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@id/dragLayout4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/blackbordersquare1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@id/dragImg4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1.0"
+                             android:gravity="center"
+                                android:text="Man"
+                                android:textColor="#ff000000"
+                                android:textSize="20.0sp"
+                                android:typeface="serif" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:id="@id/dropLayout4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center|right"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/blackbordersquare1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@id/dropImg4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.0"
+                             android:gravity="center"
+                                android:text="Woman"
+                                android:textColor="#ff000000"
+                                android:textSize="20.0sp"
+                                android:typeface="serif" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0">
+
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>
