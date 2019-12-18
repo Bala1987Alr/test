@@ -1,5 +1,6 @@
 package com.etrack.test;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.RelativeLayout;
 
@@ -21,7 +22,7 @@ private RelativeLayout fullscreen_content_controls;
         setContentView(R.layout.activity_start_screen);
 
         fullscreen_content_controls =   findViewById(R.id.fullscreen_content_controls);
-      fullscreen_content_controls.setBackground(R.color.colorstart);
+      fullscreen_content_controls.setBackgroundColor(Color.parseColor("#FF2EC2C1"));
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
