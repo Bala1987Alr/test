@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-public class StartScreen extends AppCompatActivity {
+public class MenuScreen extends AppCompatActivity {
 
 private RelativeLayout fullscreen_content_controls;
 private ImageView iv_left,iv_right,iv_center;
@@ -22,7 +22,7 @@ private ImageView iv_left,iv_right,iv_center;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_start_screen);
+        setContentView(R.layout.menu_start_screen);
         iv_left =   findViewById(R.id.iv_left);
         fullscreen_content_controls =   findViewById(R.id.fullscreen_content_controls);
         iv_center =   findViewById(R.id.iv_center);
@@ -45,11 +45,10 @@ private ImageView iv_left,iv_right,iv_center;
         iv_right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Intent intent = new Intent(getApplicationContext(), StartScreen.class);
-                startActivity(intent);*/
+
             }
         });
-        iv_left.setImageResource(R.drawable.icon_profile_on_page);
+
       fullscreen_content_controls.setBackgroundColor(Color.parseColor("#FF2EC2C1"));
 
         ActionBar actionBar = getSupportActionBar();

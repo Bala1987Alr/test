@@ -12,4 +12,5 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="title_activity_start_screen">StartScreen</string>
+    <string name="profile">Profile</string>
 </resources>

@@ -27,7 +27,7 @@ public class MainScreenActivity extends AppCompatActivity {
     private final Handler mHideHandler = new Handler();
     private Button mMatchImage,mFillIn;
     private View mContentView;
-    private ImageView iv_right;
+    private ImageView iv_right,iv_left,iv_center;
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
         @Override
@@ -66,7 +66,23 @@ public class MainScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+        iv_left =   findViewById(R.id.iv_left);
         iv_right =   findViewById(R.id.iv_right);
+        iv_center =   findViewById(R.id.iv_center);
+        iv_left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), StartScreen.class);
+                startActivity(intent);
+            }
+        });
+        iv_center.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MenuScreen.class);
+                startActivity(intent);
+            }
+        });
         iv_right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorstart"
+    tools:context=".StartScreen">
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/colorstart"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <include layout="@layout/custom_actionbar_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="80dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/my_button_yellow"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" >
+
+                    <com.etrack.test.FontText
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="wrap_content" android:textColor="@color/white"
+                        android:layout_height="wrap_content" android:textSize="45sp" android:textStyle="bold"
+                        android:text="testing color"/>
+
+
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp" android:gravity="center"
+                        android:background="@drawable/my_button_pink"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" >
+
+                        <com.etrack.test.FontText
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="wrap_content" android:textColor="@color/white"
+                            android:layout_height="wrap_content" android:textSize="45sp" android:textStyle="bold"
+                            android:text="testing color"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp" android:gravity="center"
+                        android:background="@drawable/my_button_blue"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" >
+
+                        <com.etrack.test.FontText
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="wrap_content" android:textColor="@color/white"
+                            android:layout_height="wrap_content" android:textSize="45sp" android:textStyle="bold"
+                            android:text="testing color"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"  android:gravity="center"
+                        android:background="@drawable/my_button_green"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" >
+                        <com.etrack.test.FontText
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="wrap_content" android:textColor="@color/white"
+                            android:layout_height="wrap_content" android:textSize="45sp" android:textStyle="bold"
+                            android:text="testing color"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
