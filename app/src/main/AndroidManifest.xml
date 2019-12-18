@@ -10,14 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".StartScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_start_screen"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
             android:name=".Matching"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_main_screen"></activity>
-
+            android:label="@string/title_activity_main_screen"
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".Opposite"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_main_screen"></activity>
+            android:label="@string/title_activity_main_screen" />
         <activity android:name=".MainScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -8,6 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionBarTabBarStyle.Example" parent="android:style/Widget.ActionBar.TabBar">
+        <!-- SOLUTION-2: ALTERNATIVELY, This is for Actionbar Navigation
+             Tabs 'DIVIDER' Style. Now you can try to disable/hide them. -->
+        <item name="android:showDividers">none</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerPadding">0dp</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="android:Widget.ActionBar">
+        <item name="android:background">#ff0000</item>
+    </style>
+
     <style name="FullscreenTheme" parent="AppTheme">
         <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
         <item name="android:windowActionBarOverlay">true</item>
@@ -20,4 +37,26 @@
         <item name="android:background">@color/black_overlay</item>
     </style>
 
+    <style name="customBar" parent="">
+        <item name="displayOptions">showTitle</item>
+        <item name="height">?attr/actionBarSize</item>
+
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle
+        </item>
+
+        <item name="background">@null</item>
+        <item name="backgroundStacked">@null</item>
+        <item name="backgroundSplit">@null</item>
+
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
+
+        <item name="android:gravity">center_vertical</item>
+        <item name="contentInsetStart">@dimen/abc_action_bar_content_inset_material</item>
+        <item name="contentInsetStartWithNavigation">@dimen/abc_action_bar_content_inset_with_nav
+        </item>
+        <item name="contentInsetEnd">@dimen/abc_action_bar_content_inset_material</item>
+        <item name="popupTheme">?attr/actionBarPopupTheme</item>
+    </style>
 </resources>
