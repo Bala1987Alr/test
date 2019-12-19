@@ -1,6 +1,5 @@
 package com.etrack.test;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-public class StartScreen extends AppCompatActivity {
+public class LevelTwoScreen extends AppCompatActivity {
 
 private RelativeLayout fullscreen_content_controls;
 private ImageView iv_left,iv_right,iv_center;
@@ -22,11 +21,12 @@ private ImageView iv_left,iv_right,iv_center;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_start_screen);
+        setContentView(R.layout.level_two_screen);
         iv_left =   findViewById(R.id.iv_left);
         fullscreen_content_controls =   findViewById(R.id.fullscreen_content_controls);
         iv_center =   findViewById(R.id.iv_center);
         iv_right =   findViewById(R.id.iv_right);
+        iv_center.setImageResource(R.drawable.ic_yellow_on);
         iv_left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,20 +37,19 @@ private ImageView iv_left,iv_right,iv_center;
         iv_center.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+/*
                 Intent intent = new Intent(getApplicationContext(), MenuScreen.class);
-                startActivity(intent);
+                startActivity(intent);*/
             }
         });
         iv_right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Intent intent = new Intent(getApplicationContext(), StartScreen.class);
-                startActivity(intent);*/
+
             }
         });
-        iv_left.setImageResource(R.drawable.icon_profile_on);
-      fullscreen_content_controls.setBackgroundColor(Color.parseColor("#FF2EC2C1"));
+
+      fullscreen_content_controls.setBackgroundColor(Color.parseColor("#E5B00C"));
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

@@ -24,8 +24,8 @@ public class FontText  extends AppCompatTextView {
     }
 
     public void init() {
-        Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "font/test.ttf");
-        setTypeface(tf ,1);
+        Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "font/test_bold.ttf");
+        setTypeface(tf ,Typeface.BOLD);
 
     }
 }

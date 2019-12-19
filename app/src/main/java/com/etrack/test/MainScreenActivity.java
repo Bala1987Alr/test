@@ -86,8 +86,8 @@ public class MainScreenActivity extends AppCompatActivity {
         iv_right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), StartScreen.class);
-                startActivity(intent);
+               /* Intent intent = new Intent(getApplicationContext(), StartScreen.class);
+                startActivity(intent);*/
             }
         });
        // getActionBar().setDisplayShowHomeEnabled(false);

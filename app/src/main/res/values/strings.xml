@@ -13,4 +13,9 @@
 
     <string name="title_activity_start_screen">StartScreen</string>
     <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="yellow_level">YELLOW - LEVEL 1</string>
+    <string name="red_level">RED - LEVEL 2</string>
+    <string name="blue_level">LEVEL - BLUE 3</string>
+    <string name="green_level">GREEN - LEVEL 4</string>
 </resources>

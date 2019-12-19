@@ -20,6 +20,26 @@
             android:label="@string/title_activity_start_screen"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
+            android:name=".LevelOneScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_start_screen"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".LevelTwoScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_start_screen"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".LevelThreeScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_start_screen"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".LevelFourScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_start_screen"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
             android:name=".Matching"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_main_screen"

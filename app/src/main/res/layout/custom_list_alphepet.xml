@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_margin="10dp"
+    android:padding="1dp" android:background="@drawable/curve_shape_alphabet"  android:alpha="1"
+    android:orientation="vertical">
+    <com.etrack.test.FontText
+        android:id="@+id/tv_alphabet"
+        android:layout_width="match_parent" android:layout_margin="5dp"
+        android:layout_height="wrap_content" android:gravity="center"
+        android:scaleType="fitXY" android:fontFamily="@font/test"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"  />
+</LinearLayout>

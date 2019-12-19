@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorstart"
+    tools:context=".StartScreen">
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/coloryellow"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            <include layout="@layout/custom_actionbar_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <GridView
+                    android:layout_margin="20dp" android:layout_marginTop="-10dp"
+                    android:id="@+id/gv_alphabet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:scrollbars="none"
+                    android:numColumns="3" android:gravity="center"
+                    android:horizontalSpacing="20dp"
+                    android:verticalSpacing="20dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
