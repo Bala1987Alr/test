@@ -9,36 +9,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".menulevel.pink.PinkShortLevels"></activity>
+        <activity
+            android:name=".menulevel.yellow.SelectCorrectPicture"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".LevelOneChooseTheCorrect" />
         <activity
             android:name=".StartScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_start_screen"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".MenuScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_start_screen"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".LevelOneScreen"
+            android:name=".menulevel.yellow.YellowLevel"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_start_screen"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".LevelTwoScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_start_screen"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".LevelThreeScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_start_screen"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".LevelFourScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_start_screen"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".menulevel.green.GreenLevel"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_start_screen"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".menulevel.blue.BlueLevel"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_start_screen"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".menulevel.pink.PinkLevel"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_start_screen"
+            android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".Matching"
             android:configChanges="orientation|keyboardHidden|screenSize"

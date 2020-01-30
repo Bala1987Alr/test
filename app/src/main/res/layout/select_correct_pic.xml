@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curve_shape"
+    >
+    <ImageView
+        android:id="@+id/img_src"
+        android:contentDescription="@string/select_picture_text"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/c">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/is_correct_or_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_src"
+        android:layout_alignEnd="@id/img_src"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="visible"
+        android:contentDescription="@string/select_picture_text"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+</RelativeLayout>

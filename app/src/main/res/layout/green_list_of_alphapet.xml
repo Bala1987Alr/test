@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgreen"
+    tools:context=".StartScreen">
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:id="@+id/ll_level_one"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="10dp"
+               android:gravity="center"
+               android:background="@drawable/green_level_vowles_text_background"
+               >
+
+               <com.etrack.test.FontText
+                   android:layout_margin="15dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:layout_width="wrap_content"
+                   android:textColor="@color/white"
+                   android:layout_height="wrap_content"
+                   android:text="@string/fill_in_the_blank_1"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/ll_level_two"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginBottom="10dp"
+               android:gravity="center"
+               android:background="@drawable/green_level_vowles_text_background"
+               >
+
+               <com.etrack.test.FontText
+                   android:layout_margin="15dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:layout_width="wrap_content"
+                   android:textColor="@color/white"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:text="@string/fill_in_the_blank_2"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/ll_level_three"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginBottom="10dp" android:gravity="center"
+               android:background="@drawable/green_level_vowles_text_background"
+               >
+
+               <com.etrack.test.FontText
+                   android:layout_margin="15dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:layout_width="wrap_content"
+                   android:textColor="@color/white"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:text="@string/fill_in_the_blank_3"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/ll_level_four"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginBottom="10dp"
+               android:gravity="center"
+               android:background="@drawable/green_level_vowles_text_background">
+               <com.etrack.test.FontText
+                   android:layout_margin="15dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:layout_width="wrap_content"
+                   android:textColor="@color/white"
+                   android:layout_height="wrap_content"
+                   android:text="@string/fill_in_the_blank_4"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/ll_level_five"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginBottom="10dp"
+               android:gravity="center"
+               android:background="@drawable/green_level_vowles_text_background">
+               <com.etrack.test.FontText
+                   android:layout_margin="15dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:layout_width="wrap_content"
+                   android:textColor="@color/white"
+                   android:layout_height="wrap_content"
+                   android:text="@string/fill_in_the_blank_5"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/ll_level_six"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginBottom="10dp"
+               android:gravity="center"
+               android:background="@drawable/green_level_vowles_text_background">
+               <com.etrack.test.FontText
+                   android:layout_margin="15dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:layout_width="wrap_content"
+                   android:textColor="@color/white"
+                   android:layout_height="wrap_content"
+                   android:text="@string/fill_in_the_blank_6"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/ll_level_seven"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginBottom="10dp"
+               android:gravity="center"
+               android:background="@drawable/green_level_vowles_text_background">
+               <com.etrack.test.FontText
+                   android:layout_margin="15dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:layout_width="wrap_content"
+                   android:textColor="@color/white"
+                   android:layout_height="wrap_content"
+                   android:text="@string/fill_in_the_blank_7"/>
+
+
+           </LinearLayout>
+       </LinearLayout>
+   </ScrollView>
+
+</RelativeLayout>

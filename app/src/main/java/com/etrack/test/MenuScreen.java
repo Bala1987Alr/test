@@ -8,6 +8,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.etrack.test.menulevel.blue.BlueLevel;
+import com.etrack.test.menulevel.green.GreenLevel;
+import com.etrack.test.menulevel.pink.PinkLevel;
+import com.etrack.test.menulevel.yellow.YellowLevel;
+
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,8 +29,9 @@ private LinearLayout ll_level_one,ll_level_two
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.menu_start_screen);
+
+
         iv_left =   findViewById(R.id.iv_left);
         fullscreen_content_controls =   findViewById(R.id.fullscreen_content_controls);
         iv_center =   findViewById(R.id.iv_center);
@@ -59,31 +65,32 @@ private LinearLayout ll_level_one,ll_level_two
         ll_level_one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LevelOneScreen.class);
+                Intent intent = new Intent(getApplicationContext(), YellowLevel.class);
                 startActivity(intent);
             }
         });
         ll_level_two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LevelTwoScreen.class);
+                Intent intent = new Intent(getApplicationContext(), PinkLevel.class);
                 startActivity(intent);
             }
         });
         ll_level_three.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LevelThreeScreen.class);
+                Intent intent = new Intent(getApplicationContext(), BlueLevel.class);
                 startActivity(intent);
             }
         });
         ll_level_four.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LevelFourScreen.class);
+                Intent intent = new Intent(getApplicationContext(), GreenLevel.class);
                 startActivity(intent);
             }
         });
+
       fullscreen_content_controls.setBackgroundColor(Color.parseColor("#FF2EC2C1"));
 
         ActionBar actionBar = getSupportActionBar();

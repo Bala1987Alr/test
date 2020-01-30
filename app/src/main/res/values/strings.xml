@@ -16,6 +16,30 @@
     <string name="settings">Settings</string>
     <string name="yellow_level">YELLOW - LEVEL 1</string>
     <string name="red_level">RED - LEVEL 2</string>
-    <string name="blue_level">LEVEL - BLUE 3</string>
+    <string name="blue_level">BLUE - LEVEL 3</string>
     <string name="green_level">GREEN - LEVEL 4</string>
+    <string name="work_in_progress">Work in progress</string>
+    <string name="select_picture_text">Select the pictures which start with a</string>
+    <string name="short_vowel_a1">SHORT VOWEL \'A\' - 1</string>
+    <string name="short_vowel_a2">SHORT VOWEL \'A\' - 2</string>
+    <string name="short_vowel_a3">SHORT VOWEL \'A\' - 3</string>
+    <string name="short_vowel_a4">SHORT VOWEL \'A\' - 4</string>
+
+
+    <string name="consonants_blend_1">Consonants blend \'br\'</string>
+    <string name="consonants_blend_2">Consonants blend \'cr\'</string>
+    <string name="consonants_blend_3">Consonants blend \'gr\'</string>
+    <string name="consonants_blend_4">Consonants blend \'pr\'</string>
+    <string name="consonants_blend_5">Consonants \'r\' blend Word list</string>
+
+    <string name="fill_in_the_blank_1">Fill in the blanks for \'sh\'</string>
+    <string name="fill_in_the_blank_2">Fill in the blanks for \'th\'</string>
+    <string name="fill_in_the_blank_3">Fill in the blanks for \'sh\' and \'th\'</string>
+    <string name="fill_in_the_blank_4">Fill in the blanks for \'ch\'</string>
+    <string name="fill_in_the_blank_5">Fill in the blanks for \'wh\'</string>
+    <string name="fill_in_the_blank_6">Fill in the blanks for \'ch\' and \'wh\'</string>
+    <string name="fill_in_the_blank_7">Word list with Vowel Diagraphs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity   {
         setContentView(R.layout.activity_main);
 
 
-       // imageView = (ImageView) this.findViewById(R.id.image);
+        // imageView = (ImageView) this.findViewById(R.id.image);
         t1 = (TableLayout) findViewById(R.id.tableLayout1);
         tr1 = (TableRow) findViewById(R.id.tableRow1);
         tr2 = (TableRow) findViewById(R.id.tableRow2);
@@ -60,13 +60,13 @@ public class MainActivity extends AppCompatActivity   {
         i31 = (ImageButton) findViewById(R.id.ibCCol1);
         i32 = (ImageButton) findViewById(R.id.ibBCol3);
 
-         rl = (RelativeLayout) findViewById(R.id.RelativeLayout1);
+        rl = (RelativeLayout) findViewById(R.id.RelativeLayout1);
 
         Display currentDisplay = getWindowManager().getDefaultDisplay();
         float dw = currentDisplay.getWidth();
         float dh = currentDisplay.getHeight();
 
-     bitmap = Bitmap.createBitmap((int) dw, (int) dh,
+        bitmap = Bitmap.createBitmap((int) dw, (int) dh,
                 Bitmap.Config.ARGB_8888);
         canvas = new Canvas(bitmap);
         draw = new DrawView(this);

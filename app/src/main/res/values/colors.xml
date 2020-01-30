@@ -9,6 +9,9 @@
     <color name="colorpink">#BF0054</color>
     <color name="colorgreen">#A0C243</color>
     <color name="colorOpacity">#C08827</color>
+    <color name="colorOpacityPink">#e00163</color>
+    <color name="colorOpacityBlue">#169cdc</color>
+    <color name="colorOpacityGreen">#b4da4c</color>
 
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>

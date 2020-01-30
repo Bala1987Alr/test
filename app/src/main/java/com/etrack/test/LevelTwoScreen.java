@@ -20,8 +20,9 @@ private ImageView iv_left,iv_right,iv_center;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.level_two_screen);
+
+
         iv_left =   findViewById(R.id.iv_left);
         fullscreen_content_controls =   findViewById(R.id.fullscreen_content_controls);
         iv_center =   findViewById(R.id.iv_center);

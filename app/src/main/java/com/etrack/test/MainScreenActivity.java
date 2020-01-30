@@ -7,9 +7,16 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+
+import com.etrack.test.menulevel.MenuLevelFragment;
+import com.etrack.test.play.PlayFragment;
+import com.etrack.test.profile.ProfileFragment;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -58,36 +65,59 @@ public class MainScreenActivity extends AppCompatActivity {
         }
     };
 
+    private LinearLayout parent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main_screen);
+
+        parent = (LinearLayout)findViewById(R.id.parent);
+
+
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
         iv_left =   findViewById(R.id.iv_left);
         iv_right =   findViewById(R.id.iv_right);
         iv_center =   findViewById(R.id.iv_center);
+
         iv_left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), StartScreen.class);
-                startActivity(intent);
+
+                iv_left.setImageResource(R.drawable.icon_profile_on);
+                iv_right.setImageResource(R.drawable.icon_continue_off_page);
+                ProfileFragment profileFragment = new ProfileFragment();
+                FragmentManager manager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = manager.beginTransaction();
+                fragmentTransaction.replace(R.id.container,profileFragment);
+                fragmentTransaction.commit();
             }
         });
         iv_center.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MenuScreen.class);
-                startActivity(intent);
+
+                iv_left.setImageResource(R.drawable.icon_profile_off);
+                iv_right.setImageResource(R.drawable.icon_continue_off_page);
+                MenuLevelFragment menuLevelFragment = new MenuLevelFragment();
+                FragmentManager manager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = manager.beginTransaction();
+                fragmentTransaction.replace(R.id.container,menuLevelFragment);
+                fragmentTransaction.commit();
             }
         });
         iv_right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* Intent intent = new Intent(getApplicationContext(), StartScreen.class);
-                startActivity(intent);*/
+
+                iv_left.setImageResource(R.drawable.icon_profile_off);
+                iv_right.setImageResource(R.drawable.icon_continue_on_page);
+                PlayFragment playFragment = new PlayFragment();
+                FragmentManager manager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = manager.beginTransaction();
+                fragmentTransaction.replace(R.id.container,playFragment);
+                fragmentTransaction.commit();
             }
         });
        // getActionBar().setDisplayShowHomeEnabled(false);

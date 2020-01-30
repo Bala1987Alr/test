@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coloryellow"
+    tools:context=".menulevel.yellow.SelectCorrectPicture"
+    android:orientation="vertical">
+
+    <com.etrack.test.FontText
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/select_picture_text"/>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:layout_marginBottom="100dp"
+        android:verticalSpacing="10dp">
+
+    </GridView>
+    <RelativeLayout
+        android:id="@+id/pre_and_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/icon_back_on">
+
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/icon_a_z_selection_off">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/front"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/icon_forward_on">
+
+        </Button>
+
+    </RelativeLayout>
+
+</LinearLayout>
