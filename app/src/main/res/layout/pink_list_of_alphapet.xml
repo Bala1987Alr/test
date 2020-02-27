@@ -13,7 +13,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/ll_level_one"
+                    android:id="@+id/pink_level_one"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -35,7 +35,7 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/ll_level_two"
+                    android:id="@+id/pink__level_two"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -58,7 +58,7 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/ll_level_three"
+                    android:id="@+id/pink__level_three"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -80,7 +80,7 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/ll_level_four"
+                    android:id="@+id/pink__level_four"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"

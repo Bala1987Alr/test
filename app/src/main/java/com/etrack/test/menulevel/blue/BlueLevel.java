@@ -29,4 +29,15 @@ public class BlueLevel extends AppCompatActivity {
             actionBar.hide();
 
         }
-} }
+    }
+
+    public void br(View view)
+    {
+        startActivity(new Intent(this,BlueLevelSelectTheSentence.class));
+
+    }
+
+
+
+
+}

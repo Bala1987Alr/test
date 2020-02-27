@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etrack.test.FontText
+        android:id="@+id/text_fill_the_blanks"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/green"
+        android:gravity="center"
+        android:background="@drawable/green_level_fillintheblank_img_background"
+       >
+</com.etrack.test.FontText>
+

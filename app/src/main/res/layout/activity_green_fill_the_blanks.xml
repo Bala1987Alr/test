@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgreen"
+    tools:context=".menulevel.green.GreenFillTheBlanks">
+
+    <com.etrack.test.FontText
+        android:id="@+id/sh_green_title"
+        android:layout_margin="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/green_sh_fill"/>
+
+    <RelativeLayout
+        android:id="@+id/sh_green_firstrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sh_green_title"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/sheep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/green_level_fillintheblank_img_background"
+                android:src="@mipmap/sheep">
+            </ImageView>
+            <com.etrack.test.FontText
+                android:id="@+id/font_text1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:onClick="first"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:gravity="center"
+                android:background="@drawable/green_level_fillintheblank_img_background"
+                android:layout_marginTop="10dp">
+            </com.etrack.test.FontText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ship"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/sheep">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ship"
+                android:background="@drawable/green_level_fillintheblank_img_background">
+            </ImageView>
+            <com.etrack.test.FontText
+                android:id="@+id/font_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:onClick="second"
+                android:layout_gravity="center"
+                android:textColor="@color/green"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/green_level_fillintheblank_img_background">
+            </com.etrack.test.FontText>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sh_green_secoundrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sh_green_firstrow"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/green_level_fillintheblank_img_background"
+                android:src="@mipmap/shop">
+            </ImageView>
+            <com.etrack.test.FontText
+                android:id="@+id/font_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:onClick="third"
+                android:textColor="@color/green"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/green_level_fillintheblank_img_background"
+                android:layout_marginTop="10dp">
+            </com.etrack.test.FontText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/shut"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/shop">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ship"
+                android:background="@drawable/green_level_fillintheblank_img_background">
+
+            </ImageView>
+            <com.etrack.test.FontText
+                android:id="@+id/font_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:onClick="fourth"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:gravity="center"
+                android:background="@drawable/green_level_fillintheblank_img_background"
+                android:layout_marginTop="10dp">
+            </com.etrack.test.FontText>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="previous"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@mipmap/icon_back_on" />
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@mipmap/icon_forward_on" />
+
+
+</RelativeLayout>

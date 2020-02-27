@@ -25,14 +25,27 @@ public class GreenLevel extends AppCompatActivity {
         setContentView(R.layout.green_list_of_alphapet);
 
 
-
-
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.hide();
 
         }
+    }
+
+    public void sh(View view)
+    {
+        startActivity(new Intent(this,GreenFillTheBlanks.class));
+    }
+
+    public void th(View view)
+    {
+
+    }
+
+    public void shth(View view)
+    {
+
+    }
 
 
-
-} }
+}

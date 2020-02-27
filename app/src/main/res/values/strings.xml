@@ -19,7 +19,7 @@
     <string name="blue_level">BLUE - LEVEL 3</string>
     <string name="green_level">GREEN - LEVEL 4</string>
     <string name="work_in_progress">Work in progress</string>
-    <string name="select_picture_text">Select the pictures which start with a</string>
+    <string name="select_picture_text">Select the pictures which start with \'a\'</string>
     <string name="short_vowel_a1">SHORT VOWEL \'A\' - 1</string>
     <string name="short_vowel_a2">SHORT VOWEL \'A\' - 2</string>
     <string name="short_vowel_a3">SHORT VOWEL \'A\' - 3</string>
@@ -31,7 +31,11 @@
     <string name="consonants_blend_3">Consonants blend \'gr\'</string>
     <string name="consonants_blend_4">Consonants blend \'pr\'</string>
     <string name="consonants_blend_5">Consonants \'r\' blend Word list</string>
-
+    <string name="select_the_sentence_title">Select the sentence number to the related picture in the circle provided</string>
+    <string name="select_the_sentence1">1.The cup filled up to the (brim)</string>
+    <string name="select_the_sentence2">2.I like to eat (brinjal)</string>
+    <string name="select_the_sentence3">3.(brick) is a type of building materials</string>
+    <string name="select_the_sentence4">4.Please drill the L-(bracket) into the wall</string>
     <string name="fill_in_the_blank_1">Fill in the blanks for \'sh\'</string>
     <string name="fill_in_the_blank_2">Fill in the blanks for \'th\'</string>
     <string name="fill_in_the_blank_3">Fill in the blanks for \'sh\' and \'th\'</string>
@@ -39,6 +43,9 @@
     <string name="fill_in_the_blank_5">Fill in the blanks for \'wh\'</string>
     <string name="fill_in_the_blank_6">Fill in the blanks for \'ch\' and \'wh\'</string>
     <string name="fill_in_the_blank_7">Word list with Vowel Diagraphs</string>
+
+    <string name="green_sh_fill">Fill in the blanks\n(ship)(sheep)(shut)(shop)</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

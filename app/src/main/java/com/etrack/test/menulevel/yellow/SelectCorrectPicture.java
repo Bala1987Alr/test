@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 public class SelectCorrectPicture extends AppCompatActivity {
 
-    private int[] imagelist = new int[]{R.mipmap.ant,R.mipmap.airplane,R.mipmap.apple,R.mipmap.axe,R.mipmap.grass,R.mipmap.ladybug};
+    private int[] imagelist = new int[]{R.mipmap.ant,R.mipmap.aeroplane,R.mipmap.apple,R.mipmap.axe,R.mipmap.aeroplane,R.mipmap.apple};
     private GridView gridview;
     private HashMap<Character,Boolean> selected = new HashMap<>();
 
